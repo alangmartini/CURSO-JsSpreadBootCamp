@@ -1,6 +1,7 @@
 function isPalin(word) {
-
-    let wordLetters = word.split('');
+    // format the inputed word  so it doesnt have spaces and is lowercase
+    let format = word.replace(/\s+/g, '').toLowerCase() 
+    let wordLetters = format.split(''); 
     let mylength = wordLetters.length;
     let y = Math.floor(mylength / 2);
     let a = 0;
@@ -9,8 +10,8 @@ function isPalin(word) {
         else { a--; }
     }
 
-    a === y ? console.log('Gratz! You got a palindromo!') : console.log('Not this time mate');
+    a === y ? console.log('Gratz! You got a palindrome!') : console.log('Not this time mate');
 
 }
 
-isPalin('abcdcba')
+isPalin('Socorram me subi no onibus em Marrocos')

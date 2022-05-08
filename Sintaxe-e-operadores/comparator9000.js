@@ -3,6 +3,7 @@ function compare(a, b){
      
     a === b ? equals = 'são' : equals = 'não são';
 
+
     
     (a + b) > 10 ? greater = 'maior' : greater = 'menor';
     (a + b) < 20 ? less = 'menor' : less = 'maior';
